@@ -1,0 +1,54 @@
+<section class="p-3 text-center">
+  <h2 id="userName" class="display-4" data-username="{{user.username}}">Search PKMN Cards</h2>
+
+  <section class="m-3 text-center">
+    <form class="mb-3">
+      <input type="text" id="card-search" name="card-search">
+      <button type="submit" id="searchCard">Search</button>
+    </form>
+    <div class="userCardContainer w-100" id="cardlist">
+      {{!-- <h3 class="text-center w-100">&#8593 Search here to Review a Movie &#8593</h3> --}}
+    </div>
+    <div id="try-again">
+  </section>
+</section>
+
+<div
+  class="modal fade"
+  id="animeReview"
+  tabindex="-1"
+  aria-labelledby="animeReviewLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h5 class="modal-title modal-text-bold" id="animeReviewLabel"></h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body bg-dark bg-opacity-50">
+ <form class="new-post-form d-flex flex-column justify-content-around align-items-center p-3">
+    <div>
+      <img id="card-poster" src="" alt=""/>
+    </div>
+    </div>
+    <div>
+      <textarea class="w-100" id="post-text" name="post-text"></textarea>
+    </div>
+    <button type="submit" class="button">Add this Card</button>
+  </form>
+      </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" data-bs-dismiss="modal">Pick a card any card</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/javascript/card-search.js"></script>
+<script src="/javascript/add-post.js"></script>
